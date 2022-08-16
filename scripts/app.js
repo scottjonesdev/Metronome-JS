@@ -36,10 +36,12 @@ startStopBtn.addEventListener('click', () => {
         metronome.start();
         isRunning = true;
         startStopBtn.textContent = 'STOP';
+        startStopBtn.style.backgroundColor = '#ff0040';
     } else {
         metronome.stop();
         isRunning = false;
         startStopBtn.textContent = 'START';
+        startStopBtn.style.backgroundColor = '#30C930';
     }
 });
 
