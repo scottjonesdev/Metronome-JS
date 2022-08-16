@@ -1,0 +1,136 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    user-select: none;
+    background-color: #333;
+    color: #fcfcfc;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.metronome {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    justify-content: space-between;
+    padding: 40px;
+    border: 2px solid;
+    border-radius: 50%;
+}
+.bpm-info {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+.bpm-info .tempo {
+    font-size: 4em;
+}
+
+.bpm-settings {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bpm-settings .adjust-bpm-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 40px;
+    border-radius: 50%;
+    border: 1px solid;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 0.25s;
+}
+.bpm-settings .adjust-bpm-btn:hover {
+    background: #141414;
+}
+.bpm-settings .decrease-bpm {
+    line-height: 32px;
+}
+.bpm-settings .increase-bpm {
+    line-height: 32px;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    background-color: transparent;
+    width: 70%;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fcfcfc;
+    cursor: pointer;
+    margin-top: -8px;
+}
+input[type=range]::-moz-range-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fcfcfc;
+    cursor: pointer;
+    border: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 1px;
+    background: #E3E3E3;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 1px;
+    background: #E3E3E3;
+}
+
+.toggle-metronome {
+    width: 50px;
+    height: 50px;
+    font-size: 0.7em;
+    text-align: center;
+    background: #30C930;
+    border-radius: 50%;
+    line-height: 52px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition-duration: 0.25s;
+}
+
+.toggle-metronome:hover {
+    opacity: 0.75;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
