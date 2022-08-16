@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Metronome</title>
+	<link rel="stylesheet" href="style/style.css">
+	<script src="scripts/app.js" type="module" defer></script>
+</head>
+<body>
+	<div class="bpm-info">
+		<span class="tempo">120</span>
+		<span class="bpm">BPM</span>
+	</div>
+	<div class="bpm-settings">
+        <div class="adjust-bpm-btn decrease-bpm">-</div>
+        <input type="range" min="30" max="240" step="1" class="slider">
+        <div class="adjust-bpm-btn increase-bpm">+</div>
+    </div>
+    <div class="toggle-metronome">START</div>
+</body>
+</html>
